@@ -8,7 +8,7 @@ window.I18N_EN = {
   "hero.lead": "I am training in software at EPITECH Benin and putting it to work for robotics: computer vision, microcontrollers, autonomous navigation. My path: a master's in robotics, then advanced robotics for heavy machinery, in industry, construction, mining and autonomous vehicles.",
   "hero.cta1": "See the projects",
   "hero.cta2": "Download résumé",
-  "m1.k": "Based in", "m2.k": "Role", "m2.v": "President, TekBot EPITECH", "m3.k": "Status", "m3.v": "Looking for a work-study position",
+  "m1.k": "Based in", "m2.k": "Role", "m2.v": "President, TekBot EPITECH", "m3.k": "Goal", "m3.v": "Master's in robotics",
   "f1.k": "President", "f2.k": "Internship", "f3.k": "3rd year", "f4.k": "English B2", "f4.v": "Immersion in Accra",
 
   "about.k": "About",
@@ -134,7 +134,7 @@ window.I18N_EN = {
 
   "contact.k": "Contact",
   "contact.h": "Let's talk robotics.",
-  "contact.sub": "I am looking for a work-study position in robotics and embedded systems. A question, an opportunity or a project? Write to me.",
+  "contact.sub": "A question, a robotics project or an idea for a collaboration? Write to me.",
   "contact.cv": "Résumé (PDF, French)",
   "footer.top": "Back to top ↑"
 };
