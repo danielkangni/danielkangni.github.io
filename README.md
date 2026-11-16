@@ -1,7 +1,9 @@
 # Portfolio · KANGNI Jean-Daniel
 
-Site statique en HTML, CSS et JavaScript pur. Aucune dépendance, aucune étape de build.
-Français par défaut, version anglaise via le bouton EN. Mode clair et sombre.
+Site statique en HTML, CSS et JavaScript pur, sans dépendance ni étape de build.
+Français par défaut, anglais via le bouton EN. Thèmes clair et sombre.
+
+En ligne : https://danielkangni.github.io
 
 ## Lancer en local
 
@@ -13,26 +15,17 @@ python3 -m http.server 8000
 ## Structure
 
 ```
-index.html             contenu (français)
-assets/css/style.css   styles et thèmes clair / sombre
-assets/js/i18n.js      traductions anglaises
-assets/js/main.js      thème, langue, menu mobile, animations
-assets/img/projects/   captures des projets
+index.html               contenu (français)
+assets/css/style.css     direction visuelle, thèmes, grille de projets
+assets/js/main.js        bras robotique (cinématique inverse), tracé A*, menu, thème, langue
+assets/js/i18n.js        traductions anglaises
+assets/img/              photo et captures des projets
+assets/cv/               CV public en PDF (sans numéro de téléphone)
 ```
 
 Pour modifier un texte : changer le français dans `index.html` et la clé correspondante dans `assets/js/i18n.js`.
 
-## Éléments à compléter
+## Contenu facultatif à ajouter
 
-Chaque élément est marqué `[ À COMPLÉTER ]` sur le site et par un commentaire `PLACEHOLDER` dans `index.html`.
-
-- Photo de profil (section À propos)
-- Photo ou vidéo de la main robotique Hand Bot
-- Lien démo du site Sky Bénin BTP, s'il est en ligne
-- Adresse email
-- Profil LinkedIn
-- CV en PDF (à déposer dans `assets/cv.pdf`)
-
-## Déploiement
-
-GitHub Pages depuis la branche `main` du dépôt `danielkangni.github.io`. Le fichier `.nojekyll` désactive Jekyll.
+- Une photo ou une vidéo de la main robotique Hand Bot (la carte affiche pour l'instant le schéma de la chaîne de traitement).
+- Le lien démo du site Sky Bénin BTP, s'il est en ligne.
