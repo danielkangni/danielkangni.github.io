@@ -3,14 +3,12 @@ window.I18N_EN = {
   "skip": "Skip to content",
   "nav.about": "About", "nav.projects": "Projects", "nav.skills": "Skills", "nav.path": "Journey", "nav.contact": "Contact",
 
-  "hero.pill": "Looking for a work-study position in robotics",
-  "hero.role": "Robotics · Embedded systems · Software",
-  "hero.lead": "Student at EPITECH Benin and president of the TekBot robotics club. I build systems that connect code to the physical world, with a clear goal: advanced robotics for heavy machinery, from industry and mining to construction and autonomous vehicles.",
+  "hero.tag": "EPITECH Benin · TekBot EPITECH",
+  "hero.role": "Engineering student in robotics and embedded systems.",
+  "hero.lead": "I build systems that connect code to the physical world: computer vision, microcontrollers, autonomous navigation. My goal: advanced robotics for heavy machinery, in industry, construction, mining and autonomous vehicles.",
   "hero.cta1": "See the projects",
   "hero.cta2": "Download résumé",
-  "arm.title": "Two-joint robotic arm following the cursor through inverse kinematics",
-  "arm.hint": "Move your cursor: the arm follows it",
-  "arm.hint.t": "Touch the area: the arm follows your finger",
+  "m1.k": "Based in", "m2.k": "Role", "m2.v": "President, TekBot EPITECH", "m3.k": "Status", "m3.v": "Looking for a work-study position",
   "f1.k": "President", "f2.k": "Internship", "f3.k": "3rd year", "f4.k": "English B2", "f4.v": "Immersion in Accra",
 
   "about.k": "About",

@@ -9,13 +9,13 @@
   <meta property="og:description" content="Étudiant à EPITECH Bénin, président de TekBot EPITECH. Objectif : la robotique avancée pour les engins lourds.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://danielkangni.github.io/">
-  <meta property="og:image" content="https://danielkangni.github.io/assets/img/projects/greentrack.webp">
-  <meta name="theme-color" content="#f1f0eb" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0a0b0d" media="(prefers-color-scheme: dark)">
+  <meta property="og:image" content="https://danielkangni.github.io/assets/img/photo-480.webp">
+  <meta name="theme-color" content="#f7f6f3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
   <script>
     (function () {
       try {
@@ -30,13 +30,10 @@
 <body>
   <a class="skip" href="#main" data-i18n="skip">Aller au contenu</a>
 
-  <!-- ===== Navigation flottante ===== -->
-  <header class="island-wrap">
-    <div class="island">
-      <a class="brand" href="#accueil" aria-label="KANGNI Jean-Daniel, accueil">
-        <span class="brand-mark" aria-hidden="true">KJ</span>
-        <span class="brand-name">KANGNI</span>
-      </a>
+  <!-- ===== Navigation ===== -->
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <a class="brand" href="#accueil" aria-label="KANGNI Jean-Daniel, accueil">KANGNI <em>Jean-Daniel</em></a>
       <nav class="nav" aria-label="Navigation principale">
         <a href="#about" data-i18n="nav.about">À propos</a>
         <a href="#projets" data-i18n="nav.projects">Projets</a>
@@ -47,8 +44,8 @@
       <div class="tools">
         <button class="tool" id="lang-toggle" type="button" aria-label="Switch to English">EN</button>
         <button class="tool" id="theme-toggle" type="button" aria-label="Changer de thème">
-          <svg class="i-sun" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-          <svg class="i-moon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M19.5 14.6A7.6 7.6 0 0 1 9.4 4.5a7.6 7.6 0 1 0 10.1 10.1Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M19.5 14.6A7.6 7.6 0 0 1 9.4 4.5a7.6 7.6 0 1 0 10.1 10.1Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
         </button>
         <button class="tool burger" id="menu-toggle" type="button" aria-controls="overlay" aria-expanded="false" aria-label="Ouvrir le menu"><span></span><span></span></button>
       </div>
@@ -68,90 +65,49 @@
   <main id="main">
     <!-- ===== Accueil ===== -->
     <section class="hero" id="accueil">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="pill reveal"><span class="led" aria-hidden="true"></span><span data-i18n="hero.pill">Recherche une alternance en robotique</span></p>
-          <h1 class="hero-title reveal">
-            <span class="ht-1">KANGNI</span>
-            <span class="ht-2">Jean-Daniel</span>
-          </h1>
-          <p class="hero-role mono reveal" data-i18n="hero.role">Robotique · Systèmes embarqués · Logiciel</p>
-          <p class="hero-lead reveal" data-i18n="hero.lead">Étudiant à EPITECH Bénin et président du club de robotique TekBot. Je construis des systèmes qui relient le code au monde physique, avec un cap clair : la robotique avancée pour les engins lourds, de l'industrie aux mines en passant par la construction et les véhicules autonomes.</p>
-          <div class="cta-row reveal">
-            <a class="btn btn-solid" href="#projets"><span data-i18n="hero.cta1">Voir les projets</span><span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 8h8M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-            <a class="btn btn-line" href="assets/cv/CV_Jean-Daniel_KANGNI.pdf" download><span data-i18n="hero.cta2">Télécharger le CV</span><span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M8 3v8M4.5 7.5 8 11l3.5-3.5M3.5 13h9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-          </div>
-        </div>
-
-        <div class="hero-rig reveal">
-          <div class="shell">
-            <div class="core rig">
-              <div class="rig-bar mono">
-                <span>IK_SOLVER · 2 DOF</span>
-                <span class="rig-live"><span class="led" aria-hidden="true"></span>LIVE</span>
-              </div>
-              <svg class="arm" id="arm" viewBox="0 0 400 330" role="img" aria-labelledby="arm-title">
-                <title id="arm-title" data-i18n="arm.title">Bras robotique à deux articulations qui suit le curseur par cinématique inverse</title>
-                <defs>
-                  <pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" class="arm-grid"/></pattern>
-                </defs>
-                <rect width="400" height="330" fill="url(#g)"/>
-                <circle class="arm-reach" cx="200" cy="292" r="225"/>
-                <g class="arm-target" id="arm-target"><circle r="9"/><path d="M-15 0h8M7 0h8M0-15v8M0 7v8"/></g>
-                <path class="arm-arc" id="arm-arc" d=""/>
-                <g class="arm-base"><path d="M150 318h100l-14-26h-72z"/><rect x="138" y="318" width="124" height="6" rx="2"/></g>
-                <line class="arm-link" id="link1" x1="200" y1="292" x2="200" y2="172"/>
-                <line class="arm-slot" id="slot1" x1="200" y1="292" x2="200" y2="172"/>
-                <line class="arm-link" id="link2" x1="200" y1="172" x2="200" y2="67"/>
-                <line class="arm-slot" id="slot2" x1="200" y1="172" x2="200" y2="67"/>
-                <g id="grip" transform="translate(200 67)">
-                  <g class="arm-jaws" id="jaws"><path id="jawA" d="M0 0 L-9 -6 L-9 -20"/><path id="jawB" d="M0 0 L9 -6 L9 -20"/></g>
-                </g>
-                <g class="arm-joint" id="j0"><circle cx="200" cy="292" r="14"/><circle class="arm-pin" cx="200" cy="292" r="4"/></g>
-                <g class="arm-joint" id="j1"><circle id="j1c" cx="200" cy="172" r="12"/><circle id="j1p" class="arm-pin" cx="200" cy="172" r="3.5"/></g>
-                <text class="arm-label mono" id="lbl1" x="0" y="0">θ1</text>
-              </svg>
-              <dl class="rig-read mono" aria-live="off">
-                <div><dt>θ1</dt><dd id="r-t1">90.0°</dd></div>
-                <div><dt>θ2</dt><dd id="r-t2">0.0°</dd></div>
-                <div><dt>x</dt><dd id="r-x">0</dd></div>
-                <div><dt>y</dt><dd id="r-y">225</dd></div>
-              </dl>
-              <p class="rig-hint mono"><span class="h-mouse" data-i18n="arm.hint">Déplacez le curseur : le bras le suit</span><span class="h-touch" data-i18n="arm.hint.t">Touchez la zone : le bras suit votre doigt</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="wrap">
-        <ul class="facts">
-          <li class="reveal"><span class="mono" data-i18n="f1.k">Président</span><strong>TekBot EPITECH</strong></li>
-          <li class="reveal"><span class="mono" data-i18n="f2.k">Stage</span><strong>ENGIE Bénin</strong></li>
-          <li class="reveal"><span class="mono" data-i18n="f3.k">3e année</span><strong>EPITECH Bénin</strong></li>
-          <li class="reveal"><span class="mono" data-i18n="f4.k">Anglais B2</span><strong data-i18n="f4.v">Immersion à Accra</strong></li>
-        </ul>
+        <div class="hero-panel">
+          <div class="hero-copy">
+            <p class="hero-tag mono reveal" data-i18n="hero.tag">EPITECH Bénin · TekBot EPITECH</p>
+            <h1 class="hero-title reveal">KANGNI<br><em>Jean-Daniel</em></h1>
+            <p class="hero-role reveal" data-i18n="hero.role">Étudiant ingénieur en robotique et systèmes embarqués.</p>
+            <p class="hero-lead reveal" data-i18n="hero.lead">Je construis des systèmes qui relient le code au monde physique : vision par ordinateur, microcontrôleurs, navigation autonome. Mon cap : la robotique avancée pour les engins lourds, dans l'industrie, la construction, les mines et les véhicules autonomes.</p>
+            <div class="cta-row reveal">
+              <a class="btn btn-dark" href="#projets" data-i18n="hero.cta1">Voir les projets</a>
+              <a class="btn btn-ghost" href="assets/cv/CV_Jean-Daniel_KANGNI.pdf" download><span data-i18n="hero.cta2">Télécharger le CV</span> <span aria-hidden="true">↓</span></a>
+            </div>
+            <dl class="hero-meta mono reveal">
+              <div><dt data-i18n="m1.k">Basé à</dt><dd>Cotonou, Bénin</dd></div>
+              <div><dt data-i18n="m2.k">Rôle</dt><dd data-i18n="m2.v">Président, TekBot EPITECH</dd></div>
+              <div><dt data-i18n="m3.k">Statut</dt><dd data-i18n="m3.v">Recherche une alternance</dd></div>
+            </dl>
+          </div>
+          <figure class="hero-photo">
+            <img src="assets/img/photo.webp" srcset="assets/img/photo-480.webp 480w, assets/img/photo.webp 810w" sizes="(min-width: 1024px) 40vw, 100vw" width="810" height="1080" alt="Portrait de KANGNI Jean-Daniel" data-i18n-alt="about.alt" fetchpriority="high">
+          </figure>
+        </div>
       </div>
     </section>
 
     <!-- ===== À propos ===== -->
     <section class="section" id="about">
-      <div class="wrap about">
-        <div class="about-text">
-          <p class="pill reveal"><span class="mono">01</span><span data-i18n="about.k">À propos</span></p>
-          <h2 class="statement reveal" data-i18n="about.h">Du code au matériel, je veux rendre les machines lourdes plus sûres et plus autonomes.</h2>
-          <div class="about-cols">
+      <div class="wrap">
+        <div class="about">
+          <div>
+            <p class="eyebrow mono reveal"><span>01</span><span data-i18n="about.k">À propos</span></p>
+            <h2 class="statement reveal" data-i18n="about.h">Du code au matériel, je veux rendre les machines lourdes plus sûres et plus autonomes.</h2>
+          </div>
+          <div class="about-text">
             <p class="reveal" data-i18n="about.p1">Je suis en 3e année à <strong>EPITECH Bénin</strong>, à Cotonou. La pédagogie par projets m'a donné des bases solides en C et C++ : shell Unix, serveurs réseau temps réel, cryptographie, simulation de circuits.</p>
             <p class="reveal" data-i18n="about.p2">Je préside <strong>TekBot EPITECH</strong>, le club de robotique de l'école. J'y ai mené la main robotique pilotée par caméra, travaillé la navigation autonome sous ROS 2, et mis en production l'intranet du club. Un stage chez <strong>ENGIE Bénin</strong> m'a fait découvrir le terrain industriel.</p>
+            <ul class="facts reveal">
+              <li><span class="mono" data-i18n="f1.k">Président</span><strong>TekBot EPITECH</strong></li>
+              <li><span class="mono" data-i18n="f2.k">Stage</span><strong>ENGIE Bénin</strong></li>
+              <li><span class="mono" data-i18n="f3.k">3e année</span><strong>EPITECH Bénin</strong></li>
+              <li><span class="mono" data-i18n="f4.k">Anglais B2</span><strong data-i18n="f4.v">Immersion à Accra</strong></li>
+            </ul>
           </div>
         </div>
-        <figure class="about-photo reveal">
-          <div class="shell">
-            <div class="core photo-core">
-              <img src="assets/img/photo.webp" width="480" height="480" alt="Portrait de KANGNI Jean-Daniel" data-i18n-alt="about.alt">
-            </div>
-          </div>
-          <figcaption class="mono"><span>KANGNI Jean-Daniel</span><span>Cotonou, BJ</span></figcaption>
-        </figure>
       </div>
     </section>
 
@@ -159,7 +115,7 @@
     <section class="section section-tint" id="projets">
       <div class="wrap">
         <div class="sec-head">
-          <p class="pill reveal"><span class="mono">02</span><span data-i18n="projects.k">Projets</span></p>
+          <p class="eyebrow mono reveal"><span>02</span><span data-i18n="projects.k">Projets</span></p>
           <h2 class="sec-title reveal" data-i18n="projects.h">Ce que j'ai construit</h2>
           <p class="sec-sub reveal" data-i18n="projects.sub">De la robotique au logiciel. Pour chaque projet d'équipe, j'indique mon rôle.</p>
         </div>
@@ -167,12 +123,11 @@
         <div class="bento">
           <!-- Hand Bot -->
           <article class="card c-hand reveal">
-            <div class="shell"><div class="core">
+            <div class="core">
               <div class="media media-diagram">
                 <svg class="flow" viewBox="0 0 640 380" role="img" aria-labelledby="flow-t">
                   <title id="flow-t" data-i18n="p1.flow">Chaîne de traitement : webcam, MediaPipe, Python, Bluetooth HC-05, Arduino, main imprimée en 3D</title>
-                  <path class="flow-line" d="M168 104H243M397 104H472M550 136V244M472 276H397M243 276H168"/>
-                  <path class="flow-pulse" d="M168 104H243M397 104H472M550 136V244M472 276H397M243 276H168"/>
+                  <path class="flow-line" d="M168 104H239M397 104H468M549 136V240M474 276H401M245 276H174"/><path class="flow-head" d="M233 98l8 6-8 6M462 98l8 6-8 6M543 234l6 8 6-8M407 270l-8 6 8 6M180 270l-8 6 8 6"/>
                   <g class="node"><rect x="18" y="72" width="150" height="64" rx="14"/><text x="93" y="100" class="n-t mono">Webcam</text><text x="93" y="120" class="n-s mono" data-i18n="p1.n1">flux vidéo</text></g>
                   <g class="node"><rect x="245" y="72" width="150" height="64" rx="14"/><text x="320" y="100" class="n-t mono">MediaPipe</text><text x="320" y="120" class="n-s mono" data-i18n="p1.n2">21 points / main</text></g>
                   <g class="node node-hot"><rect x="474" y="72" width="150" height="64" rx="14"/><text x="549" y="100" class="n-t mono">Python</text><text x="549" y="120" class="n-s mono" data-i18n="p1.n3">angles → consignes</text></g>
@@ -186,14 +141,14 @@
                 <h3 data-i18n="p1.t">Hand Bot, la main robotique pilotée par caméra</h3>
                 <p data-i18n="p1.d">Une main imprimée en 3D reproduit en temps réel les gestes filmés par une webcam. MediaPipe repère les articulations des doigts, Python en déduit les angles et les envoie en Bluetooth à un Arduino qui commande les servomoteurs. J'ai encadré l'équipe technique et suivi le projet.</p>
                 <ul class="chips mono"><li>Python</li><li>MediaPipe</li><li>OpenCV</li><li>Arduino</li><li>HC-05</li><li data-i18n="t.3d">Impression 3D</li></ul>
-                <a class="go" href="https://github.com/danielkangni/Bras-robotique-Tekbot" target="_blank" rel="noopener"><span data-i18n="code">Code source</span><span class="go-ico" aria-hidden="true">↗</span></a>
+                <a class="go" href="https://github.com/danielkangni/Bras-robotique-Tekbot" target="_blank" rel="noopener"><span data-i18n="code">Code source</span><span aria-hidden="true">↗</span></a>
               </div>
-            </div></div>
+            </div>
           </article>
 
           <!-- ROS 2 -->
           <article class="card c-ros reveal">
-            <div class="shell"><div class="core">
+            <div class="core">
               <div class="media media-maze">
                 <div class="maze">
                   <img src="assets/img/projects/ros2-pathfinding.webp" width="564" height="564" loading="lazy" alt="Carte d'occupation du labyrinthe TekBot" data-i18n-alt="p2.alt">
@@ -212,12 +167,12 @@
                 <ul class="chips mono"><li>ROS 2 Humble</li><li>Python</li><li>Gazebo</li><li>RViz2</li><li>Lidar</li></ul>
                 <span class="muted mono" data-i18n="p2.priv">Dépôt privé du bootcamp · code sur demande</span>
               </div>
-            </div></div>
+            </div>
           </article>
 
           <!-- GreenTrack -->
           <article class="card c-green reveal">
-            <div class="shell"><div class="core">
+            <div class="core">
               <div class="media media-img">
                 <img src="assets/img/projects/greentrack.webp" width="1200" height="675" loading="lazy" alt="Jumeau numérique 3D d'un parc de Cotonou dans GreenTrack" data-i18n-alt="p3.alt">
                 <span class="media-tag mono">ESP32 · Three.js</span>
@@ -227,14 +182,14 @@
                 <h3 data-i18n="p3.t">GreenTrack, l'arrosage intelligent des espaces verts</h3>
                 <p data-i18n="p3.d">Conçu pour l'ANAP : un nœud ESP32 mesure l'humidité du sol, calcule un indice de soif propre à chaque espèce et pilote une électrovanne, même sans réseau. Tableau de bord, carte et jumeau numérique 3D d'un parc de Cotonou.</p>
                 <ul class="chips mono"><li>ESP32</li><li>C++</li><li>Three.js</li><li>Leaflet</li><li>Node.js</li></ul>
-                <a class="go" href="https://github.com/danielkangni/green_track" target="_blank" rel="noopener"><span data-i18n="code">Code source</span><span class="go-ico" aria-hidden="true">↗</span></a>
+                <a class="go" href="https://github.com/danielkangni/green_track" target="_blank" rel="noopener"><span data-i18n="code">Code source</span><span aria-hidden="true">↗</span></a>
               </div>
-            </div></div>
+            </div>
           </article>
 
           <!-- Sky Bénin -->
           <article class="card c-sky reveal">
-            <div class="shell"><div class="core">
+            <div class="core">
               <div class="media media-img">
                 <img src="assets/img/projects/sky-benin.webp" width="401" height="251" loading="lazy" alt="Page d'accueil du site Sky Bénin BTP" data-i18n-alt="p5.alt">
                 <span class="media-tag mono" data-i18n="p5.tag">Client BTP</span>
@@ -244,20 +199,20 @@
                 <h3 data-i18n="p5.t">Sky Bénin BTP, site et administration</h3>
                 <p data-i18n="p5.d">Site d'une entreprise de construction, animé avec GSAP, et panneau d'administration sécurisé : le client gère projets et contenus sans toucher au code.</p>
                 <ul class="chips mono"><li>Next.js</li><li>TypeScript</li><li>Prisma</li><li>NextAuth</li></ul>
-                <a class="go" href="https://github.com/danielkangni/sky-benin-btp-website" target="_blank" rel="noopener"><span data-i18n="code">Code source</span><span class="go-ico" aria-hidden="true">↗</span></a>
+                <a class="go" href="https://github.com/danielkangni/sky-benin-btp-website" target="_blank" rel="noopener"><span data-i18n="code">Code source</span><span aria-hidden="true">↗</span></a>
               </div>
-            </div></div>
+            </div>
           </article>
 
           <!-- MY_PGP -->
           <article class="card c-pgp reveal">
-            <div class="shell"><div class="core core-row">
+            <div class="core core-row">
               <div class="media media-term" aria-hidden="true">
                 <div class="term-bar mono"><span>my_pgp</span><span>bash</span></div>
 <pre class="mono"><span class="t-p">$</span> ./my_pgp CRYPTO_SYSTEM MODE [OPTIONS] [key]
 <span class="t-c"># systèmes</span>  xor · aes · rsa · pgp-xor · pgp-aes
 <span class="t-c"># modes</span>     -c · -d · -g P Q
-<span class="t-p">$</span> <span class="t-ok">stdin → stdout · exit 84 on error</span><span class="caret"></span></pre>
+<span class="t-p">$</span> <span class="t-ok">stdin → stdout · exit 84 on error</span></pre>
               </div>
               <div class="body">
                 <p class="kicker mono"><span data-i18n="p4.k">Cryptographie · EPITECH</span><span class="role" data-i18n="p4.role">Équipe · ~2/3 des commits</span></p>
@@ -266,14 +221,14 @@
                 <ul class="chips mono"><li>C</li><li>AES</li><li>RSA</li><li>Bigint</li></ul>
                 <span class="muted mono" data-i18n="epitech.priv">Projet EPITECH · code privé</span>
               </div>
-            </div></div>
+            </div>
           </article>
         </div>
 
         <h3 class="list-title reveal" data-i18n="others.h">Autres projets</h3>
         <ul class="rows">
-          <li class="reveal"><div class="r-name"><strong>NanoTekSpice</strong><span class="tag mono" data-i18n="lead">Chef de projet</span></div><p data-i18n="o.nts">Simulateur de circuits logiques en C++, modélisés en graphes de composants.</p><span class="r-tech mono">C++</span></li>
-          <li class="reveal"><div class="r-name"><strong data-i18n="o.intra.t">Intranet TekBot</strong><span class="tag mono" data-i18n="prod">En production</span></div><p data-i18n="o.intra">Formations vidéo avec quiz, projets, planning et présence pour le club. Rôles et authentification sécurisée.</p><span class="r-tech mono">Node.js · Express · SQLite</span></li>
+          <li class="reveal"><div class="r-name"><strong>NanoTekSpice</strong><span class="tag tag-lead mono" data-i18n="lead">Chef de projet</span></div><p data-i18n="o.nts">Simulateur de circuits logiques en C++, modélisés en graphes de composants.</p><span class="r-tech mono">C++</span></li>
+          <li class="reveal"><div class="r-name"><strong data-i18n="o.intra.t">Intranet TekBot</strong><span class="tag tag-prod mono" data-i18n="prod">En production</span></div><p data-i18n="o.intra">Formations vidéo avec quiz, projets, planning et présence pour le club. Rôles et authentification sécurisée.</p><span class="r-tech mono">Node.js · Express · SQLite</span></li>
           <li class="reveal"><div class="r-name"><strong>Zappy</strong><span class="tag mono" data-i18n="team6">Équipe de 6</span></div><p data-i18n="o.zappy">Cœur serveur temps réel multi-clients non bloquant et protocole serveur, IA et interface 3D.</p><span class="r-tech mono">C++ · sockets</span></li>
           <li class="reveal"><a class="r-link" href="https://github.com/danielkangni/flying_sword" target="_blank" rel="noopener"><div class="r-name"><strong>Flying Sword</strong><span class="tag tag-warn mono" data-i18n="proto">Prototype non abouti</span></div><p data-i18n="o.fs">Gant à centrale inertielle sur ESP32 pour piloter un drone en MAVLink, protocole Bluetooth à somme de contrôle.</p><span class="r-tech mono">ESP32 · MPU6050 · MAVLink <span aria-hidden="true">↗</span></span></a></li>
           <li class="reveal"><div class="r-name"><strong>R-Type</strong><span class="tag mono" data-i18n="team">Équipe</span></div><p data-i18n="o.rtype">Shoot'em up en réseau jusqu'à 4 joueurs sur un moteur de jeu maison.</p><span class="r-tech mono">C++20 · CMake</span></li>
@@ -287,7 +242,7 @@
     <section class="section" id="competences">
       <div class="wrap">
         <div class="sec-head">
-          <p class="pill reveal"><span class="mono">03</span><span data-i18n="skills.k">Compétences</span></p>
+          <p class="eyebrow mono reveal"><span>03</span><span data-i18n="skills.k">Compétences</span></p>
           <h2 class="sec-title reveal" data-i18n="skills.h">Fiche technique</h2>
         </div>
         <dl class="spec">
@@ -306,7 +261,7 @@
     <section class="section section-tint" id="parcours">
       <div class="wrap">
         <div class="sec-head">
-          <p class="pill reveal"><span class="mono">04</span><span data-i18n="path.k">Parcours</span></p>
+          <p class="eyebrow mono reveal"><span>04</span><span data-i18n="path.k">Parcours</span></p>
           <h2 class="sec-title reveal" data-i18n="path.h">Expérience &amp; formation</h2>
         </div>
         <div class="path">
@@ -335,14 +290,14 @@
     <!-- ===== Contact ===== -->
     <section class="section contact" id="contact">
       <div class="wrap">
-        <p class="pill reveal"><span class="mono">05</span><span data-i18n="contact.k">Contact</span></p>
+        <p class="eyebrow mono reveal"><span>05</span><span data-i18n="contact.k">Contact</span></p>
         <h2 class="contact-title reveal" data-i18n="contact.h">Parlons robotique.</h2>
         <p class="contact-sub reveal" data-i18n="contact.sub">Je recherche une alternance en robotique et systèmes embarqués. Une question, une opportunité ou un projet ? Écrivez-moi.</p>
-        <a class="mail reveal" href="mailto:kandomaxwelle@gmail.com">kandomaxwelle@gmail.com<span class="mail-ico" aria-hidden="true">↗</span></a>
+        <a class="mail reveal" href="mailto:kandomaxwelle@gmail.com">kandomaxwelle@gmail.com</a>
         <div class="contact-links reveal">
-          <a class="btn btn-line" href="https://www.linkedin.com/in/jean-daniel-kangni" target="_blank" rel="noopener"><span>LinkedIn</span><span class="btn-ico" aria-hidden="true">↗</span></a>
-          <a class="btn btn-line" href="https://github.com/danielkangni" target="_blank" rel="noopener"><span>GitHub</span><span class="btn-ico" aria-hidden="true">↗</span></a>
-          <a class="btn btn-solid" href="assets/cv/CV_Jean-Daniel_KANGNI.pdf" download><span data-i18n="contact.cv">CV en PDF</span><span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M8 3v8M4.5 7.5 8 11l3.5-3.5M3.5 13h9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/jean-daniel-kangni" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-ghost" href="https://github.com/danielkangni" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-dark" href="assets/cv/CV_Jean-Daniel_KANGNI.pdf" download><span data-i18n="contact.cv">CV en PDF</span> <span aria-hidden="true">↓</span></a>
         </div>
       </div>
     </section>
