@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KANGNI Jean-Daniel · Robotique & systèmes embarqués</title>
-  <meta name="description" content="Portfolio de KANGNI Jean-Daniel, étudiant en 3e année à EPITECH Bénin et président du club de robotique TekBot. Robotique, systèmes embarqués, vision par ordinateur.">
-  <meta property="og:title" content="KANGNI Jean-Daniel · Robotique & systèmes embarqués">
+  <title>KANGNI Jean-Daniel · Ingénierie logicielle & robotique</title>
+  <meta name="description" content="Portfolio de KANGNI Jean-Daniel, étudiant en ingénierie logicielle à EPITECH Bénin, président du club de robotique TekBot, qui vise un master en robotique.">
+  <meta property="og:title" content="KANGNI Jean-Daniel · Ingénierie logicielle & robotique">
   <meta property="og:description" content="Étudiant à EPITECH Bénin, président de TekBot EPITECH. Objectif : la robotique avancée pour les engins lourds.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://danielkangni.github.io/">
@@ -70,8 +70,8 @@
           <div class="hero-copy">
             <p class="hero-tag mono reveal" data-i18n="hero.tag">EPITECH Bénin · TekBot EPITECH</p>
             <h1 class="hero-title reveal">KANGNI<br><em>Jean-Daniel</em></h1>
-            <p class="hero-role reveal" data-i18n="hero.role">Étudiant ingénieur en robotique et systèmes embarqués.</p>
-            <p class="hero-lead reveal" data-i18n="hero.lead">Je construis des systèmes qui relient le code au monde physique : vision par ordinateur, microcontrôleurs, navigation autonome. Mon cap : la robotique avancée pour les engins lourds, dans l'industrie, la construction, les mines et les véhicules autonomes.</p>
+            <p class="hero-role reveal" data-i18n="hero.role">Étudiant en ingénierie logicielle, je vise un master en robotique.</p>
+            <p class="hero-lead reveal" data-i18n="hero.lead">Je me forme au logiciel à EPITECH Bénin et je le mets au service de la robotique : vision par ordinateur, microcontrôleurs, navigation autonome. Mon cap : un master en robotique, puis la robotique avancée pour les engins lourds, dans l'industrie, la construction, les mines et les véhicules autonomes.</p>
             <div class="cta-row reveal">
               <a class="btn btn-dark" href="#projets" data-i18n="hero.cta1">Voir les projets</a>
               <a class="btn btn-ghost" href="assets/cv/CV_Jean-Daniel_KANGNI.pdf" download><span data-i18n="hero.cta2">Télécharger le CV</span> <span aria-hidden="true">↓</span></a>
@@ -98,7 +98,7 @@
             <h2 class="statement reveal" data-i18n="about.h">Du code au matériel, je veux rendre les machines lourdes plus sûres et plus autonomes.</h2>
           </div>
           <div class="about-text">
-            <p class="reveal" data-i18n="about.p1">Je suis en 3e année à <strong>EPITECH Bénin</strong>, à Cotonou. La pédagogie par projets m'a donné des bases solides en C et C++ : shell Unix, serveurs réseau temps réel, cryptographie, simulation de circuits.</p>
+            <p class="reveal" data-i18n="about.p1">Je suis en 3e année d'ingénierie logicielle à <strong>EPITECH Bénin</strong>, à Cotonou. La pédagogie par projets m'a donné des bases solides en C et C++ : shell Unix, serveurs réseau temps réel, cryptographie, simulation de circuits. Après ce cursus, je veux me spécialiser en robotique avec un master.</p>
             <p class="reveal" data-i18n="about.p2">Je préside <strong>TekBot EPITECH</strong>, le club de robotique de l'école. J'y ai mené la main robotique pilotée par caméra, travaillé la navigation autonome sous ROS 2, et mis en production l'intranet du club. Un stage chez <strong>ENGIE Bénin</strong> m'a fait découvrir le terrain industriel.</p>
             <ul class="facts reveal">
               <li><span class="mono" data-i18n="f1.k">Président</span><strong>TekBot EPITECH</strong></li>
@@ -111,52 +111,64 @@
       </div>
     </section>
 
-    <!-- ===== Projets ===== -->
+    <!-- ===== Projets : sommaire ===== -->
     <section class="section section-tint" id="projets">
       <div class="wrap">
         <div class="sec-head">
           <p class="eyebrow mono reveal"><span>02</span><span data-i18n="projects.k">Projets</span></p>
           <h2 class="sec-title reveal" data-i18n="projects.h">Ce que j'ai construit</h2>
-          <p class="sec-sub reveal" data-i18n="projects.sub">Chaque projet est accessible : code source, démo en ligne ou vidéo de démonstration. Pour les projets d'équipe, j'indique mon rôle.</p>
+          <p class="sec-sub reveal" data-i18n="projects.sub">Deux familles de projets : la robotique, où je veux me spécialiser, et le logiciel, ma formation actuelle. Chaque projet est accessible par son code, une démo ou une vidéo.</p>
         </div>
+        <div class="pindex-cols reveal">
+          <div>
+            <a class="pindex-head" href="#robotique"><span class="mono">A</span><span data-i18n="g.robot">Robotique &amp; embarqué</span></a>
+            <ol class="pindex">
+              <li><a href="#p-handbot"><span class="pi-n mono">A1</span><span class="pi-name">Hand Bot</span><span class="pi-dom" data-i18n="d.robot">Main robotique</span><span class="pi-acc mono" data-i18n="a.cv">Code · Vidéo</span></a></li>
+              <li><a href="#p-ros"><span class="pi-n mono">A2</span><span class="pi-name" data-i18n="p2.short">Navigation A* ROS 2</span><span class="pi-dom" data-i18n="d.mobile">Robotique mobile</span><span class="pi-acc mono" data-i18n="a.cv">Code · Vidéo</span></a></li>
+              <li><a href="#p-green"><span class="pi-n mono">A3</span><span class="pi-name">GreenTrack</span><span class="pi-dom" data-i18n="d.iot">IoT &amp; embarqué</span><span class="pi-acc mono" data-i18n="a.cdv">Code · Démo · Vidéo</span></a></li>
+            </ol>
+          </div>
+          <div>
+            <a class="pindex-head" href="#logiciel"><span class="mono">B</span><span data-i18n="g.soft">Logiciel</span></a>
+            <ol class="pindex">
+              <li><a href="#p-zappy"><span class="pi-n mono">B1</span><span class="pi-name">Zappy</span><span class="pi-dom" data-i18n="d.net">Réseau &amp; jeu 3D</span><span class="pi-acc mono" data-i18n="a.cv">Code · Vidéo</span></a></li>
+              <li><a href="#p-pgp"><span class="pi-n mono">B2</span><span class="pi-name">MY_PGP</span><span class="pi-dom" data-i18n="d.crypto">Cryptographie</span><span class="pi-acc mono" data-i18n="a.video">Vidéo</span></a></li>
+              <li><a href="#p-nts"><span class="pi-n mono">B3</span><span class="pi-name">NanoTekSpice</span><span class="pi-dom" data-i18n="d.sim">Simulation</span><span class="pi-acc mono" data-i18n="a.video">Vidéo</span></a></li>
+              <li><a href="#p-intra"><span class="pi-n mono">B4</span><span class="pi-name" data-i18n="p6.short">Intranet TekBot</span><span class="pi-dom" data-i18n="d.web">Web</span><span class="pi-acc mono" data-i18n="a.cv">Code · Vidéo</span></a></li>
+              <li><a href="#p-sky"><span class="pi-n mono">B5</span><span class="pi-name">Sky Bénin BTP</span><span class="pi-dom" data-i18n="d.web">Web</span><span class="pi-acc mono" data-i18n="a.code">Code</span></a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Sommaire des projets -->
-        <ol class="pindex reveal" aria-label="Sommaire des projets">
-          <li><a href="#p-handbot"><span class="pi-n mono">01</span><span class="pi-name">Hand Bot</span><span class="pi-dom" data-i18n="d.robot">Robotique</span><span class="pi-acc mono" data-i18n="a.code">Code</span></a></li>
-          <li><a href="#p-ros"><span class="pi-n mono">02</span><span class="pi-name" data-i18n="p2.short">Navigation A* ROS 2</span><span class="pi-dom" data-i18n="d.mobile">Robotique mobile</span><span class="pi-acc mono" data-i18n="a.code">Code</span></a></li>
-          <li><a href="#p-green"><span class="pi-n mono">03</span><span class="pi-name">GreenTrack</span><span class="pi-dom" data-i18n="d.iot">IoT &amp; embarqué</span><span class="pi-acc mono" data-i18n="a.cdv">Code · Démo · Vidéo</span></a></li>
-          <li><a href="#p-pgp"><span class="pi-n mono">04</span><span class="pi-name">MY_PGP</span><span class="pi-dom" data-i18n="d.crypto">Cryptographie</span><span class="pi-acc mono" data-i18n="a.video">Vidéo</span></a></li>
-          <li><a href="#p-nts"><span class="pi-n mono">05</span><span class="pi-name">NanoTekSpice</span><span class="pi-dom" data-i18n="d.sim">Simulation</span><span class="pi-acc mono" data-i18n="a.video">Vidéo</span></a></li>
-          <li><a href="#p-zappy"><span class="pi-n mono">06</span><span class="pi-name">Zappy</span><span class="pi-dom" data-i18n="d.net">Réseau &amp; jeu 3D</span><span class="pi-acc mono" data-i18n="a.cv">Code · Vidéo</span></a></li>
-          <li><a href="#p-intra"><span class="pi-n mono">07</span><span class="pi-name" data-i18n="p6.short">Intranet TekBot</span><span class="pi-dom" data-i18n="d.web">Web</span><span class="pi-acc mono" data-i18n="a.cv">Code · Vidéo</span></a></li>
-          <li><a href="#p-rpg"><span class="pi-n mono">08</span><span class="pi-name">Dahomey RPG</span><span class="pi-dom" data-i18n="d.game">Jeu 3D</span><span class="pi-acc mono" data-i18n="a.cp">Code · Jouer</span></a></li>
-          <li><a href="#p-sky"><span class="pi-n mono">09</span><span class="pi-name">Sky Bénin BTP</span><span class="pi-dom" data-i18n="d.web">Web</span><span class="pi-acc mono" data-i18n="a.code">Code</span></a></li>
-        </ol>
+    <!-- ===== A. Robotique & embarqué ===== -->
+    <section class="section cat" id="robotique">
+      <div class="wrap">
+        <header class="cat-head reveal">
+          <span class="cat-letter mono">A</span>
+          <div>
+            <h2 class="cat-title" data-i18n="g.robot">Robotique &amp; embarqué</h2>
+            <p class="cat-sub" data-i18n="g.robot.sub">Des systèmes qui perçoivent, décident et agissent sur le monde physique. C'est la voie que je veux suivre en master.</p>
+          </div>
+          <span class="cat-count mono" data-i18n="g.robot.n">3 projets</span>
+        </header>
 
-        <h3 class="group-title mono reveal" data-i18n="g.robot">Robotique &amp; embarqué</h3>
-
-        <!-- 01 Hand Bot -->
+        <!-- A1 Hand Bot -->
         <article class="case reveal" id="p-handbot">
-          <div class="case-media media-diagram">
-            <svg class="flow" viewBox="0 0 640 380" role="img" aria-labelledby="flow-t">
-              <title id="flow-t" data-i18n="p1.flow">Chaîne de traitement : webcam, MediaPipe, Python, Bluetooth HC-05, Arduino, main imprimée en 3D</title>
-              <path class="flow-line" d="M168 104H239M397 104H468M549 136V240M474 276H401M245 276H174"/><path class="flow-head" d="M233 98l8 6-8 6M462 98l8 6-8 6M543 234l6 8 6-8M407 270l-8 6 8 6M180 270l-8 6 8 6"/>
-              <g class="node"><rect x="18" y="72" width="150" height="64" rx="14"/><text x="93" y="100" class="n-t mono">Webcam</text><text x="93" y="120" class="n-s mono" data-i18n="p1.n1">flux vidéo</text></g>
-              <g class="node"><rect x="245" y="72" width="150" height="64" rx="14"/><text x="320" y="100" class="n-t mono">MediaPipe</text><text x="320" y="120" class="n-s mono" data-i18n="p1.n2">21 points / main</text></g>
-              <g class="node node-hot"><rect x="474" y="72" width="150" height="64" rx="14"/><text x="549" y="100" class="n-t mono">Python</text><text x="549" y="120" class="n-s mono" data-i18n="p1.n3">angles → consignes</text></g>
-              <g class="node"><rect x="474" y="244" width="150" height="64" rx="14"/><text x="549" y="272" class="n-t mono">HC-05</text><text x="549" y="292" class="n-s mono" data-i18n="p1.n4">Bluetooth série</text></g>
-              <g class="node"><rect x="245" y="244" width="150" height="64" rx="14"/><text x="320" y="272" class="n-t mono">Arduino</text><text x="320" y="292" class="n-s mono" data-i18n="p1.n5">PWM servos</text></g>
-              <g class="node node-hot"><rect x="18" y="244" width="150" height="64" rx="14"/><text x="93" y="272" class="n-t mono" data-i18n="p1.n6t">Main 3D</text><text x="93" y="292" class="n-s mono" data-i18n="p1.n6">4 servomoteurs</text></g>
-            </svg>
+          <div class="case-media media-video media-portrait">
+            <video controls preload="none" playsinline poster="assets/video/handbot.webp" aria-label="Vidéo de la main robotique qui suit les doigts de l'utilisateur" data-i18n-aria="p1.va">
+              <source src="assets/video/handbot.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="case-body">
-            <p class="kicker mono"><span data-i18n="p1.k">01 · Robotique · TekBot</span><span class="tag tag-lead" data-i18n="lead">Chef de projet</span></p>
+            <p class="kicker mono"><span data-i18n="p1.k">A1 · Robotique · TekBot</span><span class="tag tag-lead" data-i18n="lead">Chef de projet</span></p>
             <h3 data-i18n="p1.t">Hand Bot, la main robotique pilotée par caméra</h3>
             <p class="case-lead" data-i18n="p1.lead">Une main imprimée en 3D qui reproduit en temps réel les gestes filmés par une webcam.</p>
             <dl class="case-facts">
               <div><dt data-i18n="f.challenge">Le défi</dt><dd data-i18n="p1.c">Transformer le mouvement des doigts en commandes de moteurs, sans aucun capteur porté sur la main.</dd></div>
               <div><dt data-i18n="f.did">Ce que j'ai fait</dt><dd data-i18n="p1.w">J'ai mené l'équipe du club. MediaPipe repère les 21 points de la main, Python calcule l'angle de chaque doigt et l'envoie en Bluetooth à un Arduino qui pilote 4 servomoteurs.</dd></div>
-              <div><dt data-i18n="f.result">Résultat</dt><dd data-i18n="p1.r">La main suit les doigts de l'utilisateur en temps réel. Un mode test permet de valider la vision sans le matériel.</dd></div>
+              <div><dt data-i18n="f.result">Résultat</dt><dd data-i18n="p1.r">Sur la vidéo, la main robotique suit les doigts de l'utilisateur en temps réel.</dd></div>
             </dl>
             <ul class="chips mono"><li>Python</li><li>MediaPipe</li><li>OpenCV</li><li>Arduino</li><li>Bluetooth HC-05</li><li data-i18n="t.3d">Impression 3D</li></ul>
             <div class="case-actions">
@@ -165,27 +177,21 @@
           </div>
         </article>
 
-        <!-- 02 ROS 2 -->
+        <!-- A2 ROS 2 -->
         <article class="case reveal" id="p-ros">
-          <div class="case-media media-maze">
-            <div class="maze">
-              <img src="assets/img/projects/ros2-pathfinding.webp" width="564" height="564" loading="lazy" alt="Carte d'occupation du labyrinthe TekBot avec le chemin calculé par A*" data-i18n-alt="p2.alt">
-              <svg class="maze-path" viewBox="0 0 564 564" aria-hidden="true">
-                <polyline id="astar" points="81,483 81,441 99,423 99,417 147,417 171,441 171,465 225,465 255,435 255,339 285,309 309,309 339,279 339,255 363,231 465,231 465,117 483,99 483,81"/>
-                <circle class="maze-start" cx="81" cy="483" r="11"/>
-                <g class="maze-goal" transform="translate(483 81)"><circle r="13"/><circle r="5"/></g>
-              </svg>
-            </div>
-            <span class="media-tag mono" data-i18n="p2.tag">Chemin A* sur la carte du projet</span>
+          <div class="case-media media-video">
+            <video controls preload="none" playsinline poster="assets/video/ros2.webp" aria-label="Vidéo du robot TekBot qui rejoint la sortie du labyrinthe en suivant le chemin A*" data-i18n-aria="p2.va">
+              <source src="assets/video/ros2.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="case-body">
-            <p class="kicker mono"><span data-i18n="p2.k">02 · Robotique mobile · Bootcamp TekBot</span><span class="tag" data-i18n="solo">Personnel</span></p>
+            <p class="kicker mono"><span data-i18n="p2.k">A2 · Robotique mobile · Bootcamp TekBot</span><span class="tag" data-i18n="solo">Personnel</span></p>
             <h3 data-i18n="p2.t">Navigation autonome A* sous ROS 2</h3>
-            <p class="case-lead" data-i18n="p2.lead">Un robot simulé qui trouve seul son chemin dans un labyrinthe.</p>
+            <p class="case-lead" data-i18n="p2.lead">Un robot simulé qui trouve seul son chemin jusqu'à la sortie d'un labyrinthe.</p>
             <dl class="case-facts">
               <div><dt data-i18n="f.challenge">Le défi</dt><dd data-i18n="p2.c">Rejoindre un point choisi dans le labyrinthe et réagir quand un obstacle imprévu bloque la route.</dd></div>
               <div><dt data-i18n="f.did">Ce que j'ai fait</dt><dd data-i18n="p2.w">Un planificateur A* sur carte d'occupation, un contrôleur qui suit le chemin, et une replanification quand le lidar détecte un obstacle. Le tout dans un environnement ROS 2 conteneurisé.</dd></div>
-              <div><dt data-i18n="f.result">Résultat</dt><dd data-i18n="p2.r">La navigation se suit dans Gazebo et RViz2, et l'algorithme est couvert par des tests unitaires.</dd></div>
+              <div><dt data-i18n="f.result">Résultat</dt><dd data-i18n="p2.r">Sur la vidéo, le robot reçoit l'ordre d'aller à la sortie : le chemin A* s'affiche en bleu, le robot le suit et s'arrête au but.</dd></div>
             </dl>
             <ul class="chips mono"><li>ROS 2 Humble</li><li>Python</li><li>Gazebo</li><li>RViz2</li><li>Lidar</li><li>Docker</li></ul>
             <div class="case-actions">
@@ -194,7 +200,7 @@
           </div>
         </article>
 
-        <!-- 03 GreenTrack -->
+        <!-- A3 GreenTrack -->
         <article class="case reveal" id="p-green">
           <div class="case-media media-video">
             <video controls preload="none" playsinline poster="assets/img/projects/greentrack.webp" aria-label="Vidéo de démonstration de GreenTrack" data-i18n-aria="p3.va">
@@ -202,7 +208,7 @@
             </video>
           </div>
           <div class="case-body">
-            <p class="kicker mono"><span data-i18n="p3.k">03 · IoT &amp; embarqué · Hackathon</span><span class="tag" data-i18n="solo">Personnel</span></p>
+            <p class="kicker mono"><span data-i18n="p3.k">A3 · IoT &amp; embarqué · Hackathon</span><span class="tag" data-i18n="solo">Personnel</span></p>
             <h3 data-i18n="p3.t">GreenTrack, l'arrosage intelligent des espaces verts</h3>
             <p class="case-lead" data-i18n="p3.lead">Une plateforme qui arrose chaque arbre au bon moment, avec la bonne quantité d'eau.</p>
             <dl class="case-facts">
@@ -218,9 +224,49 @@
           </div>
         </article>
 
-        <h3 class="group-title mono reveal" data-i18n="g.soft">Logiciel</h3>
+        <h3 class="list-title reveal" data-i18n="others.h">Autre expérimentation</h3>
+        <ul class="rows">
+          <li class="reveal"><a class="r-link" href="https://github.com/danielkangni/flying_sword" target="_blank" rel="noopener"><div class="r-name"><strong>Flying Sword</strong><span class="tag tag-warn mono" data-i18n="proto">Prototype non abouti</span></div><p data-i18n="o.fs">Gant à centrale inertielle sur ESP32 pour piloter un drone en MAVLink, avec un protocole Bluetooth à somme de contrôle.</p><span class="r-tech mono">ESP32 · MPU6050 · MAVLink <span aria-hidden="true">↗</span></span></a></li>
+        </ul>
+      </div>
+    </section>
 
-        <!-- 04 MY_PGP -->
+    <!-- ===== B. Logiciel ===== -->
+    <section class="section section-tint cat" id="logiciel">
+      <div class="wrap">
+        <header class="cat-head reveal">
+          <span class="cat-letter mono">B</span>
+          <div>
+            <h2 class="cat-title" data-i18n="g.soft">Logiciel</h2>
+            <p class="cat-sub" data-i18n="g.soft.sub">Ma formation en ingénierie logicielle : réseau temps réel, cryptographie, simulation et applications web.</p>
+          </div>
+          <span class="cat-count mono" data-i18n="g.soft.n">5 projets</span>
+        </header>
+
+        <!-- B1 Zappy -->
+        <article class="case reveal" id="p-zappy">
+          <div class="case-media media-video">
+            <video controls preload="none" playsinline poster="assets/video/zappy.webp" aria-label="Vidéo d'une partie de Zappy" data-i18n-aria="pz.va">
+              <source src="assets/video/zappy.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="case-body">
+            <p class="kicker mono"><span data-i18n="pz.k">B1 · Réseau &amp; jeu 3D · EPITECH</span><span class="tag" data-i18n="team6">Équipe de 6</span></p>
+            <h3 data-i18n="pz.t">Zappy, un jeu multijoueur en réseau</h3>
+            <p class="case-lead" data-i18n="pz.lead">Des équipes de joueurs pilotés par une IA s'affrontent sur une carte, et une interface 3D suit la partie en direct.</p>
+            <dl class="case-facts">
+              <div><dt data-i18n="f.challenge">Le défi</dt><dd data-i18n="pz.c">Faire tourner en temps réel un serveur qui gère de nombreux clients à la fois, sans jamais bloquer.</dd></div>
+              <div><dt data-i18n="f.did">Ce que j'ai fait</dt><dd data-i18n="pz.w">J'ai développé le cœur du serveur : clients multiples non bloquants, boucle de simulation, file de commandes par joueur. J'ai aussi conçu le protocole entre le serveur, l'IA et l'interface.</dd></div>
+              <div><dt data-i18n="f.result">Résultat</dt><dd data-i18n="pz.r">La vidéo montre une vraie partie à quatre équipes sur une carte de 42 × 42 cases : les IA montent de niveau pendant que l'interface 3D affiche les événements.</dd></div>
+            </dl>
+            <ul class="chips mono"><li>C++</li><li>Sockets</li><li data-i18n="sk.mux">I/O multiplexée</li><li>Python</li><li>OpenGL</li><li>SFML</li></ul>
+            <div class="case-actions">
+              <a class="btn btn-dark" href="https://github.com/danielkangni/zappy" target="_blank" rel="noopener"><span data-i18n="b.code">Voir le code</span> <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- B2 MY_PGP -->
         <article class="case reveal" id="p-pgp">
           <div class="case-media media-video">
             <video controls preload="none" playsinline poster="assets/video/pgp.webp" aria-label="Vidéo de démonstration de MY_PGP" data-i18n-aria="p4.va">
@@ -228,7 +274,7 @@
             </video>
           </div>
           <div class="case-body">
-            <p class="kicker mono"><span data-i18n="p4.k">04 · Cryptographie · EPITECH</span><span class="tag" data-i18n="p4.role">Équipe · ~2/3 des commits</span></p>
+            <p class="kicker mono"><span data-i18n="p4.k">B2 · Cryptographie · EPITECH</span><span class="tag" data-i18n="p4.role">Équipe · ~2/3 des commits</span></p>
             <h3 data-i18n="p4.t">MY_PGP, la cryptographie écrite en C</h3>
             <p class="case-lead" data-i18n="p4.lead">Un outil de chiffrement en ligne de commande, sans aucune bibliothèque cryptographique.</p>
             <dl class="case-facts">
@@ -243,7 +289,7 @@
           </div>
         </article>
 
-        <!-- 05 NanoTekSpice -->
+        <!-- B3 NanoTekSpice -->
         <article class="case reveal" id="p-nts">
           <div class="case-media media-video">
             <video controls preload="none" playsinline poster="assets/video/nts.webp" aria-label="Vidéo de démonstration de NanoTekSpice" data-i18n-aria="p5.va">
@@ -251,7 +297,7 @@
             </video>
           </div>
           <div class="case-body">
-            <p class="kicker mono"><span data-i18n="p5.k">05 · Simulation · EPITECH</span><span class="tag tag-lead" data-i18n="lead">Chef de projet</span></p>
+            <p class="kicker mono"><span data-i18n="p5.k">B3 · Simulation · EPITECH</span><span class="tag tag-lead" data-i18n="lead">Chef de projet</span></p>
             <h3 data-i18n="p5.t">NanoTekSpice, le simulateur de circuits logiques</h3>
             <p class="case-lead" data-i18n="p5.lead">Un simulateur qui calcule l'état d'un circuit électronique décrit dans un simple fichier texte.</p>
             <dl class="case-facts">
@@ -266,30 +312,7 @@
           </div>
         </article>
 
-        <!-- 06 Zappy -->
-        <article class="case reveal" id="p-zappy">
-          <div class="case-media media-video">
-            <video controls preload="none" playsinline poster="assets/video/zappy.webp" aria-label="Vidéo d'une partie de Zappy" data-i18n-aria="pz.va">
-              <source src="assets/video/zappy.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="case-body">
-            <p class="kicker mono"><span data-i18n="pz.k">06 · Réseau &amp; jeu 3D · EPITECH</span><span class="tag" data-i18n="team6">Équipe de 6</span></p>
-            <h3 data-i18n="pz.t">Zappy, un jeu multijoueur en réseau</h3>
-            <p class="case-lead" data-i18n="pz.lead">Des équipes de joueurs pilotés par une IA s'affrontent sur une carte, et une interface 3D suit la partie en direct.</p>
-            <dl class="case-facts">
-              <div><dt data-i18n="f.challenge">Le défi</dt><dd data-i18n="pz.c">Faire tourner en temps réel un serveur qui gère de nombreux clients à la fois, sans jamais bloquer.</dd></div>
-              <div><dt data-i18n="f.did">Ce que j'ai fait</dt><dd data-i18n="pz.w">J'ai développé le cœur du serveur : clients multiples non bloquants, boucle de simulation, file de commandes par joueur. J'ai aussi conçu le protocole entre le serveur, l'IA et l'interface.</dd></div>
-              <div><dt data-i18n="f.result">Résultat</dt><dd data-i18n="pz.r">La vidéo montre une vraie partie : deux équipes d'IA montent de niveau pendant que l'interface 3D affiche les événements.</dd></div>
-            </dl>
-            <ul class="chips mono"><li>C++</li><li>Sockets</li><li data-i18n="sk.mux">I/O multiplexée</li><li>Python</li><li>OpenGL</li><li>SFML</li></ul>
-            <div class="case-actions">
-              <a class="btn btn-dark" href="https://github.com/danielkangni/zappy" target="_blank" rel="noopener"><span data-i18n="b.code">Voir le code</span> <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </article>
-
-        <!-- 07 Intranet -->
+        <!-- B4 Intranet -->
         <article class="case reveal" id="p-intra">
           <div class="case-media media-video">
             <video controls preload="none" playsinline poster="assets/video/intranet.webp" aria-label="Vidéo de démonstration de l'intranet TekBot" data-i18n-aria="p6.va">
@@ -297,7 +320,7 @@
             </video>
           </div>
           <div class="case-body">
-            <p class="kicker mono"><span data-i18n="p6.k">07 · Web · TekBot</span><span class="tag tag-prod" data-i18n="prod">En production</span></p>
+            <p class="kicker mono"><span data-i18n="p6.k">B4 · Web · TekBot</span><span class="tag tag-prod" data-i18n="prod">En production</span></p>
             <h3 data-i18n="p6.t">Intranet TekBot, la plateforme du club</h3>
             <p class="case-lead" data-i18n="p6.lead">L'outil interne du club de robotique : formations, projets et planning au même endroit.</p>
             <dl class="case-facts">
@@ -312,35 +335,13 @@
           </div>
         </article>
 
-        <!-- 08 Dahomey RPG -->
-        <article class="case reveal" id="p-rpg">
-          <div class="case-media media-img">
-            <img src="assets/img/projects/dahomey-rpg.webp" width="1280" height="720" loading="lazy" alt="Vue en jeu de Dahomey RPG : le village et le doyen" data-i18n-alt="p7.alt">
-          </div>
-          <div class="case-body">
-            <p class="kicker mono"><span data-i18n="p7.k">08 · Jeu 3D · Navigateur</span><span class="tag" data-i18n="solo">Personnel</span></p>
-            <h3 data-i18n="p7.t">Dahomey RPG, un jeu d'aventure en 3D</h3>
-            <p class="case-lead" data-i18n="p7.lead">Un jeu d'aventure jouable dans le navigateur, inspiré du royaume du Dahomey.</p>
-            <dl class="case-facts">
-              <div><dt data-i18n="f.challenge">Le défi</dt><dd data-i18n="p7.c">Créer un jeu 3D complet sans moteur de jeu ni étape de compilation, jouable sur ordinateur comme sur téléphone.</dd></div>
-              <div><dt data-i18n="f.did">Ce que j'ai fait</dt><dd data-i18n="p7.w">Un monde 3D en Three.js (village, sanctuaires, navire), trois voies de personnage, des épreuves et des combats, une sauvegarde automatique et une musique synthétisée.</dd></div>
-              <div><dt data-i18n="f.result">Résultat</dt><dd data-i18n="p7.r">Le premier chapitre se joue directement en ligne.</dd></div>
-            </dl>
-            <ul class="chips mono"><li>Three.js</li><li>JavaScript</li><li>WebGL</li><li>Web Audio</li></ul>
-            <div class="case-actions">
-              <a class="btn btn-dark" href="https://danielkangni.github.io/dahomey-rpg/" target="_blank" rel="noopener"><span data-i18n="b.play">Jouer en ligne</span> <span aria-hidden="true">↗</span></a>
-              <a class="btn btn-ghost" href="https://github.com/danielkangni/dahomey-rpg" target="_blank" rel="noopener"><span data-i18n="b.code">Voir le code</span> <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </article>
-
-        <!-- 09 Sky Bénin -->
+        <!-- B5 Sky Bénin -->
         <article class="case reveal" id="p-sky">
           <div class="case-media media-img">
-            <img src="assets/img/projects/sky-benin.webp" width="401" height="251" loading="lazy" alt="Page d'accueil du site Sky Bénin BTP" data-i18n-alt="p8.alt">
+            <img src="assets/img/projects/sky-benin.webp" width="1280" height="800" loading="lazy" alt="Page d'accueil du site Sky Bénin BTP" data-i18n-alt="p8.alt">
           </div>
           <div class="case-body">
-            <p class="kicker mono"><span data-i18n="p8.k">09 · Web · Client BTP</span><span class="tag" data-i18n="solo">Personnel</span></p>
+            <p class="kicker mono"><span data-i18n="p8.k">B5 · Web · Client BTP</span><span class="tag" data-i18n="solo">Personnel</span></p>
             <h3 data-i18n="p8.t">Sky Bénin BTP, site et administration</h3>
             <p class="case-lead" data-i18n="p8.lead">Le site d'une entreprise de construction, que le client met à jour lui-même.</p>
             <dl class="case-facts">
@@ -354,11 +355,6 @@
             </div>
           </div>
         </article>
-
-        <h3 class="list-title reveal" data-i18n="others.h">Autre expérimentation</h3>
-        <ul class="rows">
-          <li class="reveal"><a class="r-link" href="https://github.com/danielkangni/flying_sword" target="_blank" rel="noopener"><div class="r-name"><strong>Flying Sword</strong><span class="tag tag-warn mono" data-i18n="proto">Prototype non abouti</span></div><p data-i18n="o.fs">Gant à centrale inertielle sur ESP32 pour piloter un drone en MAVLink, avec un protocole Bluetooth à somme de contrôle.</p><span class="r-tech mono">ESP32 · MPU6050 · MAVLink <span aria-hidden="true">↗</span></span></a></li>
-        </ul>
       </div>
     </section>
 
