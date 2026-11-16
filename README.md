@@ -25,7 +25,20 @@ assets/cv/               CV public en PDF (sans numéro de téléphone)
 
 Pour modifier un texte : changer le français dans `index.html` et la clé correspondante dans `assets/js/i18n.js`.
 
+## Accès aux projets présentés
+
+| Projet | Accès |
+|---|---|
+| Hand Bot | [code](https://github.com/danielkangni/Bras-robotique-Tekbot) |
+| Navigation A* ROS 2 | [code](https://github.com/danielkangni/tekbot-ros2-bootcamp) |
+| GreenTrack | [démo](https://danielkangni.github.io/green_track/), [code](https://github.com/danielkangni/green_track), vidéo dans `assets/video/` |
+| MY_PGP | vidéo de vraies exécutions (code privé, projet d'équipe EPITECH) |
+| NanoTekSpice | vidéo de vraies exécutions (code privé, projet d'équipe EPITECH) |
+| Intranet TekBot | [code](https://github.com/danielkangni/tekbot-intranet), vidéo |
+| Dahomey RPG | [jouer](https://danielkangni.github.io/dahomey-rpg/), [code](https://github.com/danielkangni/dahomey-rpg) |
+| Sky Bénin BTP | [code](https://github.com/danielkangni/sky-benin-btp-website) |
+| Flying Sword | [code](https://github.com/danielkangni/flying_sword) |
+
 ## Contenu facultatif à ajouter
 
-- Une photo ou une vidéo de la main robotique Hand Bot (la carte affiche pour l'instant le schéma de la chaîne de traitement).
-- Le lien démo du site Sky Bénin BTP, s'il est en ligne.
+- Une photo ou une vidéo de la main robotique Hand Bot (la fiche affiche pour l'instant le schéma de la chaîne de traitement).

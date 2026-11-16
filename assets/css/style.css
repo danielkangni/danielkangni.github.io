@@ -294,3 +294,46 @@ em { font-style: italic; }
   *, *::before, *::after { animation: none !important; transition-duration: 0.01ms !important; transition-delay: 0s !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- Projets : sommaire + fiches ---------- */
+.pindex { list-style: none; margin: 0 0 8px; padding: 0; display: grid; border-top: 1px solid var(--ink); }
+@media (min-width: 900px) { .pindex { grid-template-columns: 1fr 1fr; column-gap: 40px; } }
+.pindex a { display: grid; grid-template-columns: 36px 1fr auto; gap: 4px 12px; align-items: baseline; padding: 14px 4px; border-bottom: 1px solid var(--line); text-decoration: none; transition: background-color 0.2s var(--ease); }
+.pindex a:hover { background: color-mix(in srgb, var(--surface) 70%, transparent); }
+.pi-n { font-size: 0.72rem; color: var(--muted); }
+.pi-name { font: 400 1.3rem/1.15 var(--serif); }
+.pi-dom { grid-column: 2; font-size: 0.82rem; color: var(--muted); }
+.pi-acc { grid-column: 3; grid-row: 1 / span 2; align-self: center; font-size: 0.66rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); padding: 4px 8px; border-radius: 4px; box-shadow: inset 0 0 0 1px var(--line-2); white-space: nowrap; }
+.group-title { margin: clamp(64px, 8vw, 96px) 0 20px; font-size: 0.74rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+
+.case {
+  display: grid; overflow: hidden; margin-bottom: 20px; scroll-margin-top: 88px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+.case:hover { border-color: var(--line-2); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+@media (min-width: 960px) { .case { grid-template-columns: 1.1fr 1fr; } }
+.case-media { position: relative; overflow: hidden; background: var(--surface-2); border-bottom: 1px solid var(--line); min-height: 0; }
+@media (min-width: 960px) { .case-media { border-bottom: 0; border-right: 1px solid var(--line); } }
+.case-media.media-img, .case-media.media-maze { aspect-ratio: 16 / 10; }
+@media (min-width: 960px) { .case-media.media-img, .case-media.media-maze, .case-media.media-video { aspect-ratio: auto; min-height: 100%; } }
+.case-media.media-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s var(--ease); }
+.case:hover .case-media.media-img img { transform: scale(1.02); }
+.case-media.media-diagram { display: flex; align-items: center; }
+.media-video { background: #111; display: flex; align-items: center; aspect-ratio: 16 / 9; }
+.media-video video { display: block; width: 100%; height: 100%; object-fit: contain; background: #111; }
+.case-body { display: flex; flex-direction: column; padding: clamp(24px, 3vw, 40px); }
+.case h3 { font-family: var(--serif); font-size: clamp(1.8rem, 2.6vw, 2.3rem); line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 10px; }
+.case-lead { font-size: 1.06rem; color: var(--ink); margin-bottom: 20px; }
+.case-facts { margin: 0 0 20px; border-top: 1px solid var(--line); }
+.case-facts div { display: grid; gap: 2px 20px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+@media (min-width: 600px) { .case-facts div { grid-template-columns: 130px 1fr; } }
+.case-facts dt { font: 500 0.68rem/1.9 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.case-facts dd { margin: 0; color: var(--ink-2); font-size: 0.95rem; line-height: 1.55; }
+.case .chips { margin: 0 0 24px; }
+.case-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: auto; }
+.note { font-size: 0.76rem; color: var(--muted); padding: 10px 12px; border-radius: 6px; background: var(--surface-2); }
+/* Vidéos : lecteur cadré au format 16:9, centré dans la colonne */
+.case-media.media-video { background: var(--surface-2); padding: clamp(12px, 2vw, 24px); aspect-ratio: auto; }
+.case-media.media-video video { aspect-ratio: 16 / 9; height: auto; border-radius: 8px; box-shadow: 0 0 0 1px var(--line); }
+.case-media.media-img img { object-position: 50% 0; }

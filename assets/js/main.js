@@ -43,10 +43,13 @@
   var aNodes = document.querySelectorAll("[data-i18n-alt]");
   tNodes.forEach(function (el) { el.dataset.fr = el.innerHTML; });
   aNodes.forEach(function (el) { el.dataset.frAlt = el.getAttribute("alt"); });
+  var rNodes = document.querySelectorAll("[data-i18n-aria]");
+  rNodes.forEach(function (el) { el.dataset.frAria = el.getAttribute("aria-label"); });
   function applyLang(l) {
     var en = l === "en", d = window.I18N_EN || {};
     tNodes.forEach(function (el) { var k = el.dataset.i18n; el.innerHTML = en && d[k] ? d[k] : el.dataset.fr; });
     aNodes.forEach(function (el) { var k = el.dataset.i18nAlt; el.setAttribute("alt", en && d[k] ? d[k] : el.dataset.frAlt); });
+    rNodes.forEach(function (el) { var k = el.dataset.i18nAria; el.setAttribute("aria-label", en && d[k] ? d[k] : el.dataset.frAria); });
     var m = META[en ? "en" : "fr"];
     root.lang = en ? "en" : "fr";
     document.title = m.title;
@@ -100,9 +103,13 @@
       var aio = new IntersectionObserver(function (es) {
         es.forEach(function (e) { if (e.isIntersecting) { astar.style.strokeDashoffset = 0; aio.disconnect(); } });
       }, { threshold: 0.45 });
-      aio.observe(astar.closest(".media"));
+      aio.observe(astar.closest(".case-media, .media") || astar);
     }
   }
+
+  /* ================= Une seule vidéo à la fois ================= */
+  var vids = document.querySelectorAll("video");
+  vids.forEach(function (v) { v.addEventListener("play", function () { vids.forEach(function (o) { if (o !== v) o.pause(); }); }); });
 
   var y = document.getElementById("year");
   if (y) y.textContent = String(new Date().getFullYear());
