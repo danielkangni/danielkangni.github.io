@@ -127,9 +127,10 @@
           <li><a href="#p-green"><span class="pi-n mono">03</span><span class="pi-name">GreenTrack</span><span class="pi-dom" data-i18n="d.iot">IoT &amp; embarqué</span><span class="pi-acc mono" data-i18n="a.cdv">Code · Démo · Vidéo</span></a></li>
           <li><a href="#p-pgp"><span class="pi-n mono">04</span><span class="pi-name">MY_PGP</span><span class="pi-dom" data-i18n="d.crypto">Cryptographie</span><span class="pi-acc mono" data-i18n="a.video">Vidéo</span></a></li>
           <li><a href="#p-nts"><span class="pi-n mono">05</span><span class="pi-name">NanoTekSpice</span><span class="pi-dom" data-i18n="d.sim">Simulation</span><span class="pi-acc mono" data-i18n="a.video">Vidéo</span></a></li>
-          <li><a href="#p-intra"><span class="pi-n mono">06</span><span class="pi-name" data-i18n="p6.short">Intranet TekBot</span><span class="pi-dom" data-i18n="d.web">Web</span><span class="pi-acc mono" data-i18n="a.cv">Code · Vidéo</span></a></li>
-          <li><a href="#p-rpg"><span class="pi-n mono">07</span><span class="pi-name">Dahomey RPG</span><span class="pi-dom" data-i18n="d.game">Jeu 3D</span><span class="pi-acc mono" data-i18n="a.cp">Code · Jouer</span></a></li>
-          <li><a href="#p-sky"><span class="pi-n mono">08</span><span class="pi-name">Sky Bénin BTP</span><span class="pi-dom" data-i18n="d.web">Web</span><span class="pi-acc mono" data-i18n="a.code">Code</span></a></li>
+          <li><a href="#p-zappy"><span class="pi-n mono">06</span><span class="pi-name">Zappy</span><span class="pi-dom" data-i18n="d.net">Réseau &amp; jeu 3D</span><span class="pi-acc mono" data-i18n="a.cv">Code · Vidéo</span></a></li>
+          <li><a href="#p-intra"><span class="pi-n mono">07</span><span class="pi-name" data-i18n="p6.short">Intranet TekBot</span><span class="pi-dom" data-i18n="d.web">Web</span><span class="pi-acc mono" data-i18n="a.cv">Code · Vidéo</span></a></li>
+          <li><a href="#p-rpg"><span class="pi-n mono">08</span><span class="pi-name">Dahomey RPG</span><span class="pi-dom" data-i18n="d.game">Jeu 3D</span><span class="pi-acc mono" data-i18n="a.cp">Code · Jouer</span></a></li>
+          <li><a href="#p-sky"><span class="pi-n mono">09</span><span class="pi-name">Sky Bénin BTP</span><span class="pi-dom" data-i18n="d.web">Web</span><span class="pi-acc mono" data-i18n="a.code">Code</span></a></li>
         </ol>
 
         <h3 class="group-title mono reveal" data-i18n="g.robot">Robotique &amp; embarqué</h3>
@@ -265,7 +266,30 @@
           </div>
         </article>
 
-        <!-- 06 Intranet -->
+        <!-- 06 Zappy -->
+        <article class="case reveal" id="p-zappy">
+          <div class="case-media media-video">
+            <video controls preload="none" playsinline poster="assets/video/zappy.webp" aria-label="Vidéo d'une partie de Zappy" data-i18n-aria="pz.va">
+              <source src="assets/video/zappy.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="case-body">
+            <p class="kicker mono"><span data-i18n="pz.k">06 · Réseau &amp; jeu 3D · EPITECH</span><span class="tag" data-i18n="team6">Équipe de 6</span></p>
+            <h3 data-i18n="pz.t">Zappy, un jeu multijoueur en réseau</h3>
+            <p class="case-lead" data-i18n="pz.lead">Des équipes de joueurs pilotés par une IA s'affrontent sur une carte, et une interface 3D suit la partie en direct.</p>
+            <dl class="case-facts">
+              <div><dt data-i18n="f.challenge">Le défi</dt><dd data-i18n="pz.c">Faire tourner en temps réel un serveur qui gère de nombreux clients à la fois, sans jamais bloquer.</dd></div>
+              <div><dt data-i18n="f.did">Ce que j'ai fait</dt><dd data-i18n="pz.w">J'ai développé le cœur du serveur : clients multiples non bloquants, boucle de simulation, file de commandes par joueur. J'ai aussi conçu le protocole entre le serveur, l'IA et l'interface.</dd></div>
+              <div><dt data-i18n="f.result">Résultat</dt><dd data-i18n="pz.r">La vidéo montre une vraie partie : deux équipes d'IA montent de niveau pendant que l'interface 3D affiche les événements.</dd></div>
+            </dl>
+            <ul class="chips mono"><li>C++</li><li>Sockets</li><li data-i18n="sk.mux">I/O multiplexée</li><li>Python</li><li>OpenGL</li><li>SFML</li></ul>
+            <div class="case-actions">
+              <a class="btn btn-dark" href="https://github.com/danielkangni/zappy" target="_blank" rel="noopener"><span data-i18n="b.code">Voir le code</span> <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 07 Intranet -->
         <article class="case reveal" id="p-intra">
           <div class="case-media media-video">
             <video controls preload="none" playsinline poster="assets/video/intranet.webp" aria-label="Vidéo de démonstration de l'intranet TekBot" data-i18n-aria="p6.va">
@@ -273,7 +297,7 @@
             </video>
           </div>
           <div class="case-body">
-            <p class="kicker mono"><span data-i18n="p6.k">06 · Web · TekBot</span><span class="tag tag-prod" data-i18n="prod">En production</span></p>
+            <p class="kicker mono"><span data-i18n="p6.k">07 · Web · TekBot</span><span class="tag tag-prod" data-i18n="prod">En production</span></p>
             <h3 data-i18n="p6.t">Intranet TekBot, la plateforme du club</h3>
             <p class="case-lead" data-i18n="p6.lead">L'outil interne du club de robotique : formations, projets et planning au même endroit.</p>
             <dl class="case-facts">
@@ -288,13 +312,13 @@
           </div>
         </article>
 
-        <!-- 07 Dahomey RPG -->
+        <!-- 08 Dahomey RPG -->
         <article class="case reveal" id="p-rpg">
           <div class="case-media media-img">
             <img src="assets/img/projects/dahomey-rpg.webp" width="1280" height="720" loading="lazy" alt="Vue en jeu de Dahomey RPG : le village et le doyen" data-i18n-alt="p7.alt">
           </div>
           <div class="case-body">
-            <p class="kicker mono"><span data-i18n="p7.k">07 · Jeu 3D · Navigateur</span><span class="tag" data-i18n="solo">Personnel</span></p>
+            <p class="kicker mono"><span data-i18n="p7.k">08 · Jeu 3D · Navigateur</span><span class="tag" data-i18n="solo">Personnel</span></p>
             <h3 data-i18n="p7.t">Dahomey RPG, un jeu d'aventure en 3D</h3>
             <p class="case-lead" data-i18n="p7.lead">Un jeu d'aventure jouable dans le navigateur, inspiré du royaume du Dahomey.</p>
             <dl class="case-facts">
@@ -310,13 +334,13 @@
           </div>
         </article>
 
-        <!-- 08 Sky Bénin -->
+        <!-- 09 Sky Bénin -->
         <article class="case reveal" id="p-sky">
           <div class="case-media media-img">
             <img src="assets/img/projects/sky-benin.webp" width="401" height="251" loading="lazy" alt="Page d'accueil du site Sky Bénin BTP" data-i18n-alt="p8.alt">
           </div>
           <div class="case-body">
-            <p class="kicker mono"><span data-i18n="p8.k">08 · Web · Client BTP</span><span class="tag" data-i18n="solo">Personnel</span></p>
+            <p class="kicker mono"><span data-i18n="p8.k">09 · Web · Client BTP</span><span class="tag" data-i18n="solo">Personnel</span></p>
             <h3 data-i18n="p8.t">Sky Bénin BTP, site et administration</h3>
             <p class="case-lead" data-i18n="p8.lead">Le site d'une entreprise de construction, que le client met à jour lui-même.</p>
             <dl class="case-facts">

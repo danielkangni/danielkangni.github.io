@@ -34,6 +34,7 @@ Pour modifier un texte : changer le français dans `index.html` et la clé corre
 | GreenTrack | [démo](https://danielkangni.github.io/green_track/), [code](https://github.com/danielkangni/green_track), vidéo dans `assets/video/` |
 | MY_PGP | vidéo de vraies exécutions (code privé, projet d'équipe EPITECH) |
 | NanoTekSpice | vidéo de vraies exécutions (code privé, projet d'équipe EPITECH) |
+| Zappy | [code](https://github.com/danielkangni/zappy), vidéo d'une vraie partie |
 | Intranet TekBot | [code](https://github.com/danielkangni/tekbot-intranet), vidéo |
 | Dahomey RPG | [jouer](https://danielkangni.github.io/dahomey-rpg/), [code](https://github.com/danielkangni/dahomey-rpg) |
 | Sky Bénin BTP | [code](https://github.com/danielkangni/sky-benin-btp-website) |
